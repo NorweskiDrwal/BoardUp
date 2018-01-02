@@ -6,13 +6,13 @@
           <v-container fluid>
             <v-layout row>
               <v-flex xs5 sm4 md3>
-                <v-card-media :src="meetup.imageURL" height="130px"></v-card-media>
+                <v-card-media :src="meetup.imageUrl" height="130px"></v-card-media>
               </v-flex>
               <v-flex xs7 sm8 md9>
                 <v-card-title primary-title>
                   <div class="white--text">
                     <h4 class="headline">{{ meetup.title}}</h4>
-                    <p>{{ meetup.date }}</p>
+                    <p>{{ meetup.date | date }}</p>
                   </div>
                 </v-card-title>
                 <v-card-actions>

@@ -7,16 +7,20 @@ export const store = new Vuex.Store({
   state: {
     loadedMeetups: [
       {
-        date: '2017-10-10',
+        date: new Date(),
         id: 'one',
-        imageURL: 'https://travel.usnews.com/static-travel/images/destinations/44/empire_state_building_getty_zsolt_hlinka.jpg',
-        title: 'NY Meetup'
+        imageUrl: 'https://travel.usnews.com/static-travel/images/destinations/44/empire_state_building_getty_zsolt_hlinka.jpg',
+        title: 'NY Meetup',
+        location: 'New York',
+        description: 'Big Apple'
       },
       {
-        date: '2018-10-10',
+        date: new Date(),
         id: 'two',
-        imageURL: 'http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Paris/paris-attractions-xlarge.jpg',
-        title: 'Paris Meetup'
+        imageUrl: 'http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Paris/paris-attractions-xlarge.jpg',
+        title: 'Paris Meetup',
+        location: 'Paris',
+        description: 'Bagiety'
       }
     ],
     user: {
@@ -24,8 +28,24 @@ export const store = new Vuex.Store({
       registeredMeetups: ['asdasd']
     }
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+    createMeetup (state, payload) {
+      state.loadedMeetups.push(payload)
+    }
+  },
+  actions: {
+    createMeetup ({commit}, payload) {
+      const meetup = {
+        title: payload.title,
+        location: payload.location,
+        imageUrl: payload.imageUrl,
+        description: payload.description,
+        date: payload.date,
+        id: 'three'
+      }
+      commit('createMeetup', meetup)
+    }
+  },
   getters: {
     loadedMeetups (state) {
       return state.loadedMeetups.sort((meetupA, meetupB) => {

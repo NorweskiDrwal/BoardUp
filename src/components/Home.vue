@@ -15,7 +15,7 @@
     <v-layout row wrap>
       <v-flex xs12>
         <v-carousel hide-delimiters style="cursor:pointer">
-          <v-carousel-item v-for="meetup in meetups" v-bind:src="meetup.imageURL" :key="meetup.id" @click="onLoadMeetup(meetup.id)">
+          <v-carousel-item v-for="meetup in meetups" v-bind:src="meetup.imageUrl" :key="meetup.id" @click="onLoadMeetup(meetup.id)">
             <div class="title pa-3">{{ meetup.title }}</div>
           </v-carousel-item>
         </v-carousel>
