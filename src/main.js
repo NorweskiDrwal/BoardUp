@@ -30,7 +30,11 @@ new Vue({
       projectId: 'boardup-24a7a',
       storageBucket: 'boardup-24a7a.appspot.com'
     })
-
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$store.dispatch('autoLogin', user)
+      }
+    })
     this.$store.dispatch('loadMeetups')
   }
 })
