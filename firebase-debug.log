@@ -1,0 +1,65 @@
+[debug] [2018-01-03T13:56:01.254Z] ----------------------------------------------------------------------
+[debug] [2018-01-03T13:56:01.257Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Laptok\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-01-03T13:56:01.257Z] CLI Version:   3.16.0
+[debug] [2018-01-03T13:56:01.257Z] Platform:      win32
+[debug] [2018-01-03T13:56:01.257Z] Node Version:  v8.9.1
+[debug] [2018-01-03T13:56:01.258Z] Time:          Wed Jan 03 2018 14:56:01 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-01-03T13:56:01.258Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-03T13:56:01.271Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-01-03T13:56:01.272Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Laptok\Desktop\projekty\boardup
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-01-03T13:57:05.176Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-03T13:57:05.177Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/HA5Ke0Q0JZzekOQMbXa3tFkQCxUZtwg5wWB1KX96zd8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jan 03 2018 14:57:05 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-01-03T13:57:05.346Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-03T13:57:05.357Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed Jan 03 2018 14:57:05 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-01-03T13:57:06.199Z] <<< HTTP RESPONSE 200
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2018-01-03T13:57:22.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-03T13:57:22.685Z] > authorizing via signed-in user
+[debug] [2018-01-03T13:57:22.686Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-03T13:57:22.686Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/HA5Ke0Q0JZzekOQMbXa3tFkQCxUZtwg5wWB1KX96zd8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jan 03 2018 14:57:22 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-01-03T13:57:22.831Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-03T13:57:22.838Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/boardup-24a7a  
+  
+ Wed Jan 03 2018 14:57:22 GMT+0100 (Środkowoeuropejski czas stand.)
+[debug] [2018-01-03T13:57:23.424Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-03T13:57:23.426Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/boardup-24a7a/tokens  
+  
+ Wed Jan 03 2018 14:57:23 GMT+0100 (Środkowoeuropejski czas stand.)
