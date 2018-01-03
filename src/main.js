@@ -30,5 +30,7 @@ new Vue({
       projectId: 'boardup-24a7a',
       storageBucket: 'boardup-24a7a.appspot.com'
     })
+
+    this.$store.dispatch('loadMeetups')
   }
 })
