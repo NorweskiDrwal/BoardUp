@@ -28,7 +28,7 @@ new Vue({
       authDomain: 'boardup-24a7a.firebaseapp.com',
       databaseURL: 'https://boardup-24a7a.firebaseio.com',
       projectId: 'boardup-24a7a',
-      storageBucket: 'boardup-24a7a.appspot.com'
+      storageBucket: 'gs://boardup-24a7a.appspot.com'
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
